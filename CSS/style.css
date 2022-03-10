@@ -1,0 +1,44 @@
+/*box-sizing*/
+* {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+   }
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoimg {
+    padding: 25px 55px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 56px 40px;
+    margin: 0 2px;
+}
+
+.navbar a:hover {
+    color: #0065FC;
+    border-top: 4px #0065FC solid;
+}
+
+/*
+
+
+*/
