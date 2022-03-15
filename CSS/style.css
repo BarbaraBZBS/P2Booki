@@ -61,6 +61,7 @@ h2 {
  /*section1*/
 .srchtrip {
     padding-left: 30px;
+    margin-bottom: 35px;
 }
 
 .srchtrip h1 {
@@ -198,7 +199,6 @@ h2 {
         height: 100px;
         padding-left: 45px;
     }
-
     .navbar a {
         font-size: 26px;
         border: transparent 4px solid;
@@ -208,6 +208,16 @@ h2 {
         border-top: none;
         padding-bottom: 26px;
     }
+    .srchtrip p, .info p {
+        font-size: 21px;
+    }
+    .filters h2 {
+        font-size: 24px;
+    }
+    #findlocation, .filters button {
+        font-size: 22px;
+    }
+
 }
 
 /*mobile*/
@@ -217,6 +227,15 @@ h2 {
     }
     .srchtrip {
         padding: 0 40px;
+    }
+    .srchtrip h1 {
+        font-size: 30px;
+    }
+    .srchtrip h1, .srchtrip p {
+        margin-left: 25px;
+    }
+    .srchtrip p, .info p {
+        font-size: 21px;
     }
     .srchform {
         justify-content: center;
@@ -263,6 +282,45 @@ h2 {
     }
     .navbar a:hover {
         border-top: none;
+    }
+    #searchf {
+        justify-content: center;
+        max-width: fit-content;
+        width: auto;
+    }
+    .filters h2 {
+        width: 100%;
+        padding-bottom: 25px;
+        font-size: 24px;
+    }
+    #findlocation,.filters button {
+        font-size: 22px;
+    }
+    #subbuttn i {
+        display: flex;
+        color: white;
+        justify-content: center;
+        width: 20px;
+        font-size: 20px;
+    }
+    #findlocation {
+        max-width: 290px;
+        width: auto;
+        border-right: transparent;
+        text-indent: 0px;
+        outline: none;
+    }
+    #searchf #subbuttn {
+        justify-content: center;
+        font-size: 0px;
+        padding: 3px 23px;
+        border-radius: 19px;
+        margin-left: -20px;
+    }
+    #searchf #locabuttn {
+        padding: 0 8px;
+        border-top-left-radius: 19px;
+        border-bottom-left-radius: 19px;
     }
 
 }
