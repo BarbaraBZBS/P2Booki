@@ -182,6 +182,184 @@ h2 {
     align-items: center;
 }
 
+/*section2*/
+.accommodation {
+    display: flex;
+}
+
+.marsacc {
+    background-color: #f2f2f2;
+    margin-right: 35px;
+    border-radius: 25px;
+    padding: 25px 0;
+    max-width: 955px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.marsacc .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 725px;
+}
+
+.marsacc a {
+    display: flex;
+    min-height: 210px;
+    max-height: 210px;
+    text-decoration: none;
+    color: black;
+}
+
+.marsacc .card {
+    display: flex;
+    width: 270px;
+    padding: 2px;
+    max-width: 55%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 5px 10px #d9d9d9;
+    margin-bottom: 45px;
+}
+
+article figure{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 0;
+    padding: 3px;
+    background-color: white;
+}
+
+article figure img{
+    min-height: 125px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+article figcaption{
+    padding: 5px 3% 5px 3%;
+    height: 92px;
+}
+.marsacc figcaption h3, .marsacc figcaption p {
+    padding-left: 5px;
+    margin: 0 0 5px 0;
+}
+.marsacc .card-info p {
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+
+/*stars color*/
+.bluestar {
+    color: #0065FC;
+}
+.greystar {
+    color: #d9d9d9;
+}
+
+.marsacc .card-body .card-stars {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.popular {
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 25px 25px 0 25px;
+}
+
+.aside-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.popular a {
+    display: flex;
+    min-height: 148px;
+    max-height: 148px;
+    min-width: 370px;
+    max-width: 370px;
+    text-decoration: none;
+    color: black;
+}
+
+.popular .card {
+    display: flex;
+    padding: 2px;
+    max-width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 5px 10px #d9d9d9;
+    margin-bottom: 45px;
+}
+
+.popular figure{
+    display: flex;
+    padding: 2px;
+    margin: 0;
+}
+
+.popular figure img{
+    min-width: 32%;
+    max-width: 32%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+aside figcaption{
+    padding: 3px 5% 6px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular .card-info p {
+    font-size: 16px;
+}
+
+.popular .card-body .card-stars {
+    font-size: 12px;
+}
+
+#showmore {
+    font-size: 22px;
+    font-weight: 700;
+    height: 25px;
+    margin: 20px 0 10px 33px;
+}
+
+.marsacc h1 {
+    margin: 30px 0 30px 35px;
+}
+
+.popular figcaption h3 {
+    margin: 10px 0 5px 0;
+}
+
+.popular figcaption p {
+    margin: 5px 0 0 0;
+}
+
+.popular h1 {
+    margin: 30px 0 0 10px;
+}
+
+.popular #popicon {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #2f76e0ce;
+}
+
 
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
