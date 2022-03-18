@@ -9,6 +9,7 @@ body {
     font-family: 'Raleway', sans-serif;
     padding: 0 50px 0 50px ;
     margin: 0;
+    max-width: 1514px;
 }
 
 /*header*/
@@ -206,7 +207,7 @@ h2 {
     max-height: 725px;
 }
 
-.marsacc a {
+.marsacc .card a {
     display: flex;
     min-height: 210px;
     max-height: 210px;
@@ -271,6 +272,7 @@ article figcaption{
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 25px 25px 0 25px;
+    width: 25%;
 }
 
 .aside-title {
@@ -280,11 +282,10 @@ article figcaption{
     padding-bottom: 45px;
 }
 
-.popular a {
+.popular .card a {
     display: flex;
     min-height: 148px;
     max-height: 148px;
-    min-width: 370px;
     max-width: 370px;
     text-decoration: none;
     color: black;
@@ -301,6 +302,7 @@ article figcaption{
 }
 
 .popular figure{
+    max-width: 100%;
     display: flex;
     padding: 2px;
     margin: 0;
@@ -318,10 +320,12 @@ aside figcaption{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .popular .card-info p {
     font-size: 16px;
+    margin: 5px 0 0 0;
 }
 
 .popular .card-body .card-stars {
@@ -341,10 +345,6 @@ aside figcaption{
 
 .popular figcaption h3 {
     margin: 10px 0 5px 0;
-}
-
-.popular figcaption p {
-    margin: 5px 0 0 0;
 }
 
 .popular h1 {
@@ -395,6 +395,61 @@ aside figcaption{
     #findlocation, .filters button {
         font-size: 22px;
     }
+    .marsacc {
+        width: 50%;
+    }
+    .popular {
+        width: 50%;
+    }
+    .marsacc h1 {
+        margin: 30px 0 50px 0;
+        text-align: center;
+    }
+    .marsacc .cards {
+        max-height: fit-content;
+        max-height: -moz-fit-content;
+    }
+    .marsacc figcaption {
+        padding: 5px 4% 3px 4%;
+    }
+    .marsacc .card {
+        max-width: none;
+        width: 380px;
+        margin-bottom: 35px;
+    }
+    .marsacc figcaption h3 {
+        font-size: 21px;
+        margin-bottom: 2px;
+    }
+    .marsacc figcaption p {
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+    .popular figure img {
+        min-width: 43%;
+        max-width: 43%;
+    }
+    .popular .card a {
+        min-height: 180px;
+        max-height: 180px;
+    }
+    .popular figcaption h3 {
+        font-size: 21px;
+    }
+    .popular figcaption p {
+        font-size: 17px;
+    }
+    .popular .card-stars {
+        font-size: 14px;
+    }
+    .popular {
+        height: 855px;
+    }
+    .aside-title {
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
 
 }
 
@@ -501,5 +556,81 @@ aside figcaption{
         border-bottom-left-radius: 19px;
     }
 
+    .accommodation {
+        flex-direction: column-reverse;
+    }
+    .popular, .marsacc {
+        width: 100%;
+        padding: 40px 40px 0 40px;
+        border-radius: 0px;
+    }
+    .popular h1, .marsacc h1 {
+        font-size: 38px;
+    }
+    .popular #popicon {
+        font-size: 30px;
+    }
+    .popular figure img {
+        max-width: none;
+        min-width: 45%;
+        width: 300px;
+    }
+    .popular .card a {
+        min-height: 210px;
+        max-width: none;
+        width: 100%;
+    }
+    .popular figcaption h3 {
+        font-size: 28px;
+        margin: 10px 0 15px 0;
+    }
+    .popular .card-info p, .marsacc .card-info p {
+        font-size: 23px;
+    }
+    .popular figcaption {
+        width: 100%;
+        padding: 10px 6%;
+    }
+    .popular .card-body .card-stars, .marsacc .card-body .card-stars {
+        font-size: 19px;
+    }
+    .marsacc {
+        background-color: white;
+    }
+    .marsacc .card a, .marsacc .card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .marsacc .card a {
+        max-height: 320px;
+    }
+    .marsacc h1 {
+        padding-bottom: 45px;
+        margin-bottom: 0px;
+    }
+    .marsacc figcaption h3 {
+        font-size: 28px;
+        margin: 2px 0 0 0;
+    }
+   article figure {
+        padding: 5px;
+        min-width: 100%;
+    }
+    article figcaption {
+        margin-bottom: 2px;
+    }
+    .marsacc .cards {
+        max-height: fit-content;
+        max-height: -moz-fit-content;
+    }
+    .marsacc #showmore a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
+    #showmore {
+        margin: 10px 0 15px 0;
+
+    }
 }
 
