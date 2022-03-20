@@ -54,7 +54,11 @@ h1 {
 h2 {
     font-size: 20px;
 }
- p {
+h3 {
+    font-size: 17px;
+}
+
+ .srchtrip p {
      font-size: 19px;
      margin-left: 5px;
  }
@@ -151,8 +155,8 @@ h2 {
     color: #0065FC;
     background-color: #DEEBFF;
     border: #DEEBFF 2px solid;
-    height: 60px;
-    width: 60px;
+    height: 56px;
+    width: 56px;
     border-radius: 40px;
     left: -3px;
     align-items: center;
@@ -188,12 +192,17 @@ h2 {
     display: flex;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
 .marsacc {
     background-color: #f2f2f2;
-    margin-right: 35px;
+    margin: 0 25px 0 5px;
     border-radius: 25px;
-    padding: 25px 0;
-    max-width: 955px;
+    padding: 15px 20px;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -204,29 +213,28 @@ h2 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 100%;
-    max-height: 725px;
 }
 
 .marsacc .card a {
     display: flex;
-    min-height: 210px;
-    max-height: 210px;
+    min-height: 235px;
+    max-height: 235px;
     text-decoration: none;
     color: black;
 }
 
 .marsacc .card {
     display: flex;
-    width: 270px;
+    width: 280px;
     padding: 2px;
     max-width: 55%;
     border-radius: 25px;
     background-color: white;
     box-shadow: 0 5px 10px #d9d9d9;
-    margin-bottom: 45px;
+    margin: 0 10px 45px 10px;
 }
 
-article figure{
+.marsacc figure {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
@@ -235,22 +243,25 @@ article figure{
     background-color: white;
 }
 
-article figure img{
-    min-height: 125px;
+.marsacc figure img {
+    min-height: 60%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-article figcaption{
-    padding: 5px 3% 5px 3%;
-    height: 92px;
+.marsacc figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 1% 11px 4%;
+    min-height: 100px;
 }
 .marsacc figcaption h3, .marsacc figcaption p {
     padding-left: 5px;
     margin: 0 0 5px 0;
 }
-.marsacc .card-info p {
+.marsacc figcaption p {
     font-size: 16px;
     padding-bottom: 2px;
 }
@@ -263,30 +274,42 @@ article figcaption{
     color: #d9d9d9;
 }
 
-.marsacc .card-body .card-stars {
+.marsacc .card-stars {
     padding-left: 5px;
     font-size: 12px;
 }
 
+#showmore {
+    font-size: 25px;
+    font-weight: 700;
+    height: 25px;
+    margin: 110px 0 10px 38px;
+}
+
+.marsacc #showmore a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .popular {
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 25px 25px 0 25px;
+    padding: 15px 20px;
     width: 25%;
+    min-width: auto;
 }
 
 .aside-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 45px;
 }
 
 .popular .card a {
     display: flex;
-    min-height: 148px;
-    max-height: 148px;
-    max-width: 370px;
+    min-height: 200px;
+    max-height: 200px;
     text-decoration: none;
     color: black;
 }
@@ -301,59 +324,55 @@ article figcaption{
     margin-bottom: 45px;
 }
 
-.popular figure{
+.popular figure {
     max-width: 100%;
     display: flex;
     padding: 2px;
     margin: 0;
 }
 
-.popular figure img{
-    min-width: 32%;
-    max-width: 32%;
+.popular figure img {
+    min-width: 40%;
+    max-width: 40%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
 
-aside figcaption{
-    padding: 3px 5% 6px 5%;
+.popular figcaption {
+    padding: 10px 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
-.popular .card-info p {
+.popular figcaption p {
     font-size: 16px;
-    margin: 5px 0 0 0;
+    margin-top: 5px;
 }
 
-.popular .card-body .card-stars {
+.popular .card-stars {
     font-size: 12px;
 }
 
-#showmore {
-    font-size: 22px;
-    font-weight: 700;
-    height: 25px;
-    margin: 20px 0 10px 33px;
-}
-
 .marsacc h1 {
-    margin: 30px 0 30px 35px;
+    margin: 30px 0 20px 35px;
+    height: 60px;
 }
 
 .popular figcaption h3 {
-    margin: 10px 0 5px 0;
+    margin: 0 0 5px 0;
 }
 
 .popular h1 {
-    margin: 30px 0 0 10px;
+    font-size: 24px;
+    margin: 30px 0 20px 0;
+    height: 60px;
 }
 
 .popular #popicon {
-    margin-top: 30px;
-    font-size: 20px;
+    margin: 0 0 20px 3px;
+    font-size: 16px;
 }
 
 .card:hover {
@@ -395,27 +414,45 @@ aside figcaption{
     #findlocation, .filters button {
         font-size: 22px;
     }
+    .filter i {
+        height: 57px;
+        width: 57px;
+    }
+    .accommodation {
+        flex-direction: column-reverse;
+    }
     .marsacc {
-        width: 50%;
+        width: 100%;
+        margin: 30px 0 10px 0;
+        padding: 20px 15px;
     }
     .popular {
-        width: 50%;
+        width: 100%;
+        padding: 20px 40px 30px 40px;
     }
     .marsacc h1 {
         margin: 30px 0 50px 0;
         text-align: center;
+        font-size: 30px;
     }
     .marsacc .cards {
         max-height: fit-content;
         max-height: -moz-fit-content;
     }
     .marsacc figcaption {
-        padding: 5px 4% 3px 4%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 4% 10px 3%;
+        justify-content: space-between;
     }
     .marsacc .card {
         max-width: none;
         width: 380px;
         margin-bottom: 35px;
+    }
+    .marsacc .card a {
+        min-height: 255px;
+        max-height: 255px;
     }
     .marsacc figcaption h3 {
         font-size: 21px;
@@ -427,29 +464,38 @@ aside figcaption{
     }
     .popular figure img {
         min-width: 43%;
-        max-width: 43%;
+        width: 610px;
     }
     .popular .card a {
-        min-height: 180px;
-        max-height: 180px;
+        min-height: 210px;
+        max-height: 210px;
     }
     .popular figcaption h3 {
-        font-size: 21px;
+        font-size: 25px;
+    }
+    .popular #popicon {
+        margin: 0 0 12px 3px;
+        font-size: 20px;
+    }
+    .popular h1 {
+        font-size: 30px;
     }
     .popular figcaption p {
-        font-size: 17px;
+        font-size: 22px;
     }
     .popular .card-stars {
-        font-size: 14px;
-    }
-    .popular {
-        height: 855px;
+        font-size: 17px;
     }
     .aside-title {
         justify-content: space-around;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
-
+    .popular .card {
+        margin-bottom: 35px;
+    }
+    #showmore {
+        margin: 20px 0 10px 25px;
+    }
 
 }
 
@@ -459,16 +505,24 @@ aside figcaption{
         padding: 0;
     }
     .srchtrip {
-        padding: 0 40px;
+        padding: 0 10px;
     }
     .srchtrip h1 {
-        font-size: 30px;
+        font-size: clamp(16px,4vw, 26px);
     }
     .srchtrip h1, .srchtrip p {
-        margin-left: 25px;
+        margin-left: 15px;
+    }
+    .info p {
+        align-items: baseline;
+    }
+    .info i {
+        border-radius: 40px;
+        height: 25px;
+        width: 25px;
     }
     .srchtrip p, .info p {
-        font-size: 21px;
+        font-size: clamp(14px,4vw, 20px);
     }
     .srchform {
         justify-content: center;
@@ -482,11 +536,12 @@ aside figcaption{
         padding: 0;
         margin: 0;
         flex-direction: column;
+        justify-content: center;
     }
     .navbar img {
-        width: 180px;
+        width: 160px;
         height: 120px;
-        padding: 25px 0 25px 0;
+        padding: 25px 0;
         margin-left: 65px;
     }
     .navbar ul {
@@ -500,7 +555,7 @@ aside figcaption{
         width: 50%;   
     }
     .navbar a {
-        font-size: 24px;
+        font-size: clamp(10px, 5vw, 21px);
         padding: 0;
         margin: 0;
     }
@@ -518,105 +573,113 @@ aside figcaption{
     }
     #searchf {
         justify-content: center;
-        max-width: fit-content;
         width: auto;
     }
     .filters h2 {
         width: 100%;
         padding-bottom: 25px;
-        font-size: 24px;
+        font-size: clamp(15px,5vw, 22px);
     }
-    #findlocation,.filters button {
-        font-size: 22px;
+    .filters button {
+        font-size: clamp(11px,4vw, 19px);
     }
     #subbuttn i {
         display: flex;
         color: white;
         justify-content: center;
         width: 20px;
-        font-size: 20px;
+        font-size: clamp(9px,4vw, 19px);
     }
     #findlocation {
-        max-width: 290px;
-        width: auto;
+        max-width: 240px;
         border-right: transparent;
-        text-indent: 0px;
+        padding: 0;
+        text-indent: 13px;
         outline: none;
+        font-size: clamp(10px,4vw, 21px);
     }
     #searchf #subbuttn {
         justify-content: center;
         font-size: 0px;
-        padding: 3px 23px;
-        border-radius: 19px;
+        padding: 3px 12px;
+        border-radius: 15px;
         margin-left: -20px;
     }
     #searchf #locabuttn {
-        padding: 0 8px;
-        border-top-left-radius: 19px;
-        border-bottom-left-radius: 19px;
+        padding: 0;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
     }
-
+    #searchf i {
+        font-size: clamp(11px,4vw, 20px);
+    }
     .accommodation {
         flex-direction: column-reverse;
     }
     .popular, .marsacc {
         width: 100%;
-        padding: 40px 40px 0 40px;
+        padding: 15px 20px 0 20px;
         border-radius: 0px;
+        min-width: auto;
     }
     .popular h1, .marsacc h1 {
-        font-size: 38px;
+        font-size: clamp(18px,5vw, 26px);
+        height: 70px;
+        margin: 30px 0 0 5px;
     }
     .popular #popicon {
-        font-size: 30px;
+        font-size: clamp(12px,4vw, 19px);
+        margin: 0 0 10px 5px;
     }
     .popular figure img {
         max-width: none;
-        min-width: 45%;
-        width: 300px;
+        min-width: 35%;
+        width: 250px;
     }
     .popular .card a {
-        min-height: 210px;
+        min-height: 180px;
         max-width: none;
         width: 100%;
     }
     .popular figcaption h3 {
-        font-size: 28px;
-        margin: 10px 0 15px 0;
+        font-size: clamp(13px,4vw, 18px);
+        margin: 5px 0 10px 0;
     }
-    .popular .card-info p, .marsacc .card-info p {
-        font-size: 23px;
+    .popular figcaption p, .marsacc figcaption p {
+        font-size: clamp(11px,4vw, 16px);
+        margin-bottom: 10px;
     }
     .popular figcaption {
         width: 100%;
         padding: 10px 6%;
     }
-    .popular .card-body .card-stars, .marsacc .card-body .card-stars {
-        font-size: 19px;
+    .popular .card-stars, .marsacc .card-stars {
+        font-size: clamp(5px,4vw, 11px);
     }
     .marsacc {
         background-color: white;
+        margin: 0;
     }
     .marsacc .card a, .marsacc .card{
         width: 100%;
         max-width: 100%;
+        max-height: 350px;
     }
-    .marsacc .card a {
-        max-height: 320px;
-    }
-    .marsacc h1 {
-        padding-bottom: 45px;
-        margin-bottom: 0px;
+    .marsacc .card {
+        margin: 0 0 45px 0;
     }
     .marsacc figcaption h3 {
-        font-size: 28px;
-        margin: 2px 0 0 0;
+        font-size: clamp(13px,4vw, 18px);
+        margin: 4px 0 3px 0;
     }
-   article figure {
+    .marsacc figure img {
+        height: 160px;
+    }
+   .marsacc figure {
         padding: 5px;
         min-width: 100%;
     }
-    article figcaption {
+    .marsacc figcaption {
         margin-bottom: 2px;
     }
     .marsacc .cards {
@@ -626,11 +689,13 @@ aside figcaption{
     .marsacc #showmore a {
         text-decoration: none;
         color: black;
-        font-size: 30px;
+        font-size: clamp(16px,4vw, 23px);
     }
     #showmore {
         margin: 10px 0 15px 0;
-
+    }
+    .row {
+        flex-direction: column;
     }
 }
 
