@@ -5,12 +5,36 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
    }
 
-body {
+#main_wrapper {
     font-family: 'Raleway', sans-serif;
-    padding: 0 50px 0 50px ;
     margin: 0;
-    max-width: 1514px;
+    max-width: 1920px;
 }
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+ header {
+    padding: 0 50px 0 50px ;
+ }
 
 /*header*/
 .navbar {
@@ -22,19 +46,14 @@ body {
 
 .navbar img {
     height: 85px;
-    width: 210px;
     padding-top: 15px;
-    padding-left: 3%;
 }
 
 .navbar ul {
     display: flex;
-    list-style: none;
 }
 
 .navbar a {
-    color: black;
-    text-decoration: none;
     font-size: 21px;
     padding: 5px 20px;
     margin: 0 2px;
@@ -47,20 +66,9 @@ body {
     padding-top: 29px;
 }
 
-h1 {
-    font-size: 26px;
-}
-
-h2 {
-    font-size: 20px;
-}
-h3 {
-    font-size: 17px;
-}
-
  .srchtrip p {
-     font-size: 19px;
-     margin-left: 5px;
+    font-size: 18px;
+    margin-left: 10px;
  }
 
  /*section1*/
@@ -70,7 +78,7 @@ h3 {
 }
 
 .srchtrip h1 {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /*search form*/
@@ -110,6 +118,8 @@ h3 {
     text-indent: 18px;
     color: black;
     border: #f2f2f2 2px solid;
+    -webkit-appearance: none;
+    background-color: white;
 }
 
 #searchf button {
@@ -127,12 +137,12 @@ h3 {
 .filter {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin: 0 0 25px 10px;
     flex-wrap: wrap;
 }
 
 .filter h2 {
-    margin: 0 10px 0 25px;
+    margin: 0 10px 0 5px;
     padding-bottom: 10px;
 }
 
@@ -140,15 +150,18 @@ h3 {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 15px 30px 15px 75px;
+    padding: 15px 25px 15px 70px;
     border: #d9d9d9 2px solid;
     background-color: white;
     border-radius: 40px;
     font-size: 20px;
     font-weight: 700;
-    margin: 0 15px 10px 15px;
+    margin: 0 10px 10px 15px;
 } 
 
+.filter .info {
+    margin-left: 10px;
+}
 .filter i {
     display: flex;
     position: absolute;
@@ -171,7 +184,7 @@ h3 {
 .info p{
     display: flex;
     flex-direction: row;
-    margin-left: 25px;
+    margin-left: 5px;
     align-items: center;
 }
 
@@ -192,6 +205,7 @@ h3 {
     display: flex;
 }
 
+/*mars acc*/
 .row {
     display: flex;
     flex-direction: row;
@@ -200,10 +214,10 @@ h3 {
 }
 .marsacc {
     background-color: #f2f2f2;
-    margin: 0 25px 0 5px;
+    margin: 0 30px;
     border-radius: 25px;
-    padding: 15px 20px;
-    width: 75%;
+    padding: 15px;
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
@@ -219,8 +233,6 @@ h3 {
     display: flex;
     min-height: 235px;
     max-height: 235px;
-    text-decoration: none;
-    color: black;
 }
 
 .marsacc .card {
@@ -230,7 +242,7 @@ h3 {
     max-width: 55%;
     border-radius: 25px;
     background-color: white;
-    box-shadow: 0 5px 10px #d9d9d9;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     margin: 0 10px 45px 10px;
 }
 
@@ -253,51 +265,50 @@ h3 {
 .marsacc figcaption {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 8px 1% 11px 4%;
+    padding: 10px 1% 0 4%;
     min-height: 100px;
 }
+
 .marsacc figcaption h3, .marsacc figcaption p {
     padding-left: 5px;
     margin: 0 0 5px 0;
 }
-.marsacc figcaption p {
+
+.marsacc figcaption h3 {
     font-size: 16px;
-    padding-bottom: 2px;
 }
 
-/*stars color*/
-.bluestar {
-    color: #0065FC;
-}
-.greystar {
-    color: #d9d9d9;
+.marsacc figcaption p {
+    font-size: 14px;
+    padding-bottom: 5px;
 }
 
 .marsacc .card-stars {
     padding-left: 5px;
-    font-size: 12px;
+    font-size: clamp(10px,1vw,12px);
 }
 
 #showmore {
     font-size: 25px;
     font-weight: 700;
     height: 25px;
-    margin: 110px 0 10px 38px;
+    margin: 30px 0 10px 38px;
 }
 
-.marsacc #showmore a {
-    text-decoration: none;
-    color: black;
+.marsacc h1 {
+    margin: 30px 0 10px 15px;
+    height: 60px;
+    font-size: 25px;
 }
 
-
+/* most popular */
 .popular {
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 15px 20px;
-    width: 25%;
+    padding: 15px 25px;
+    width: 35%;
     min-width: auto;
+    margin-right: 30px;
 }
 
 .aside-title {
@@ -308,10 +319,8 @@ h3 {
 
 .popular .card a {
     display: flex;
-    min-height: 200px;
-    max-height: 200px;
-    text-decoration: none;
-    color: black;
+    min-height: 170px;
+    max-height: 170px;
 }
 
 .popular .card {
@@ -320,7 +329,7 @@ h3 {
     max-width: 100%;
     border-radius: 25px;
     background-color: white;
-    box-shadow: 0 5px 10px #d9d9d9;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 45px;
 }
 
@@ -329,6 +338,7 @@ h3 {
     display: flex;
     padding: 2px;
     margin: 0;
+    border-radius: 20px;
 }
 
 .popular figure img {
@@ -339,7 +349,7 @@ h3 {
 }
 
 .popular figcaption {
-    padding: 10px 4%;
+    padding:8px 1% 10px 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -347,50 +357,184 @@ h3 {
 }
 
 .popular figcaption p {
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 14px;
+    margin-top: 15px;
 }
 
 .popular .card-stars {
-    font-size: 12px;
-}
-
-.marsacc h1 {
-    margin: 30px 0 20px 35px;
-    height: 60px;
+    font-size: clamp(10px,1vw,12px);
 }
 
 .popular figcaption h3 {
-    margin: 0 0 5px 0;
+    margin: 10px 0 5px 0;
+    font-size: 16px;
 }
 
 .popular h1 {
-    font-size: 24px;
-    margin: 30px 0 20px 0;
+    font-size: 23px;
+    margin: 30px 0 10px 0;
     height: 60px;
 }
 
 .popular #popicon {
-    margin: 0 0 20px 3px;
-    font-size: 16px;
+    margin: 0 0 11px 3px;
+    font-size: 15px;
+}
+
+/*stars color*/
+.bluestar {
+    color: #0065FC;
+}
+.greystar {
+    color: #d9d9d9;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 #2f76e0ce;
+    box-shadow: 0 8px 16px 0 #1f4cff;
 }
+
+
+/*section3*/
+.marsact {
+    padding: 15px 0;
+    margin: 10px 30px 55px 30px;
+}
+
+ .marsact h1 {
+    margin: 30px 0 0 5px;
+    height: 60px;
+ }
+
+ .marsact .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .marsact figure h3 {
+    margin-left: 20px;
+ }
+
+ #firstimg:hover, #secondimg:hover {
+    box-shadow: 0 8px 16px 0 #1f4cff;
+ }
+ /*first and third column*/
+ .lgimgcolumn {
+    display: flex;
+    width: 22%;
+    height: 530px;
+ }
+
+ .lgimgcolumn .card {
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+ }
+
+ .lgimgcolumn a {
+    display: flex;
+    height: 100%;
+    margin: 0;
+ }
+
+ .lgimgcolumn figure {
+    margin: 0;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+ }
+
+.lgimgcolumn figure img {
+    height: 88%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+ 
+/*second and fourth column*/
+.smimgscolumn {
+    display: flex;
+    width: 22%;
+    flex-flow: column wrap;
+    height: 530px;
+    justify-content: space-between;
+}
+#secondcol #firstimg, #fourthcol #secondimg {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+#secondcol #secondimg, #fourthcol #firstimg {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    border-radius: 25px;
+}
+.smimgscolumn a {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.smimgscolumn figure {
+    margin: 0;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#secondcol #firstimg img, #fourthcol #secondimg img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#secondcol #secondimg img, #fourthcol #firstimg img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+}
+
+.about, .accommodations, .help {
+    width: 250px;
+    margin: 30px 196px 5px 25px;
+    padding: 10px;
+}
+footer ul {
+    padding: 10px 2px;
+}
+
+footer li {
+    margin-bottom: 18px;
+}
+
 
 
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body {
         width: auto;
-        padding: 0 25px 0 25px;
     }
     header {
-        justify-content: center;
-        align-items: center;
+        padding: 0;
         margin-bottom: 20px;
-    }
+     }
+     main {
+        padding: 0;
+     }    
     .navbar img {
         width: 230px;
         height: 100px;
@@ -404,6 +548,9 @@ h3 {
         border-bottom: 4px #0065FC solid;
         border-top: none;
         padding-bottom: 26px;
+    }
+    .srchtrip {
+        padding-left: 45px;
     }
     .srchtrip p, .info p {
         font-size: 21px;
@@ -420,6 +567,7 @@ h3 {
     }
     .accommodation {
         flex-direction: column-reverse;
+        margin: 0 25px;
     }
     .marsacc {
         width: 100%;
@@ -471,17 +619,17 @@ h3 {
         max-height: 210px;
     }
     .popular figcaption h3 {
-        font-size: 25px;
+        font-size: 22px;
     }
     .popular #popicon {
-        margin: 0 0 12px 3px;
+        margin: 0 0 5px 3px;
         font-size: 20px;
     }
     .popular h1 {
         font-size: 30px;
     }
     .popular figcaption p {
-        font-size: 22px;
+        font-size: 20px;
     }
     .popular .card-stars {
         font-size: 17px;
@@ -496,19 +644,44 @@ h3 {
     #showmore {
         margin: 20px 0 10px 25px;
     }
-
+    footer h2 {
+        font-size: 22px;
+    }
+    footer a {
+        font-size: 20px;
+    }
+    .about, .accommodations, .help {
+        margin: 30px 5px 0 25px;
+        width: 100%;
+        min-width: auto;
+    }
+    .marsact {
+        margin: 10px 25px 55px 25px;
+    }
+    .marsact h1 {
+        text-align: center;
+        margin: 45px 0 30px 0;
+        font-size: 30px;
+    }
+    .marsact figure h3 {
+        font-size: 19px;
+        margin: 5px 0 0 10px ;
+    }
 }
 
 /*mobile*/
 @media screen and (max-width: 767px) {
-    body {
+    header {
         padding: 0;
-    }
+     }
+     main {
+        padding: 0;
+     }    
     .srchtrip {
         padding: 0 10px;
     }
     .srchtrip h1 {
-        font-size: clamp(16px,4vw, 26px);
+        font-size: clamp(18px,5vw, 26px);
     }
     .srchtrip h1, .srchtrip p {
         margin-left: 15px;
@@ -592,29 +765,33 @@ h3 {
     }
     #findlocation {
         max-width: 240px;
-        border-right: transparent;
         padding: 0;
         text-indent: 13px;
         outline: none;
         font-size: clamp(10px,4vw, 21px);
+        border-radius: 0;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
     }
     #searchf #subbuttn {
         justify-content: center;
         font-size: 0px;
         padding: 3px 12px;
         border-radius: 15px;
-        margin-left: -20px;
+        margin-left: -25px;
     }
     #searchf #locabuttn {
         padding: 0;
         border-top-left-radius: 14px;
         border-bottom-left-radius: 14px;
+        margin-left: -5px;
     }
     #searchf i {
         font-size: clamp(11px,4vw, 20px);
     }
     .accommodation {
         flex-direction: column-reverse;
+        margin-bottom: 20px;
     }
     .popular, .marsacc {
         width: 100%;
@@ -623,13 +800,13 @@ h3 {
         min-width: auto;
     }
     .popular h1, .marsacc h1 {
-        font-size: clamp(18px,5vw, 26px);
+        font-size: clamp(20px,5vw, 26px);
         height: 70px;
-        margin: 30px 0 0 5px;
+        margin: 30px 0 10px 5px;
     }
     .popular #popicon {
         font-size: clamp(12px,4vw, 19px);
-        margin: 0 0 10px 5px;
+        margin: 0 0 20px 5px;
     }
     .popular figure img {
         max-width: none;
@@ -647,7 +824,7 @@ h3 {
     }
     .popular figcaption p, .marsacc figcaption p {
         font-size: clamp(11px,4vw, 16px);
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     .popular figcaption {
         width: 100%;
@@ -663,7 +840,7 @@ h3 {
     .marsacc .card a, .marsacc .card{
         width: 100%;
         max-width: 100%;
-        max-height: 350px;
+        height: 220px;
     }
     .marsacc .card {
         margin: 0 0 45px 0;
@@ -673,23 +850,24 @@ h3 {
         margin: 4px 0 3px 0;
     }
     .marsacc figure img {
-        height: 160px;
+        min-height: 135px;
     }
    .marsacc figure {
         padding: 5px;
         min-width: 100%;
+        height: 220px;
     }
     .marsacc figcaption {
         margin-bottom: 2px;
+        min-height: 80px;
+        padding: 5px 5px 0 5px;
     }
     .marsacc .cards {
         max-height: fit-content;
         max-height: -moz-fit-content;
     }
     .marsacc #showmore a {
-        text-decoration: none;
-        color: black;
-        font-size: clamp(16px,4vw, 23px);
+        font-size: clamp(19px,4vw, 23px);
     }
     #showmore {
         margin: 10px 0 15px 0;
@@ -697,5 +875,92 @@ h3 {
     .row {
         flex-direction: column;
     }
+
+    .marsact {
+        padding: 25px 20px 0 20px;
+        margin: 0 0 70px 0;
+    }
+    .marsact h1 {
+            font-size: clamp(20px,5vw, 26px);
+            height: 70px;
+            margin: 30px 0 10px 5px;
+    }
+    .marsact .cards {
+        flex-direction: column;
+    }
+    .lgimgcolumn  {
+        width: 100%;
+        height: fit-content;
+    }
+    #firstcol {
+        margin: 0 0 21px 0;
+    }
+    .lgimgcolumn .card {
+        height: 220px;
+        width: 100%;
+    }
+    .lgimgcolumn figure {
+        width: 100%;
+    }
+    .lgimgcolumn figure img {
+        height: 70%;
+    }
+    #thirdcol {
+        margin: 21px 0;
+    }
+    .marsact figure h3{
+        font-size: clamp(12px,5vw,21px);
+        margin: 15px 0 20px 20px;
+    }
+    .smimgscolumn {
+        width: 100%;
+        flex-direction: row;
+    }
+    #secondcol {
+        margin: 21px 0;
+        height: 482px;
+    }
+    #secondcol #firstimg, #secondcol #secondimg, #fourthcol #firstimg, #fourthcol #secondimg {
+        height: 220px;
+        width: 100%;
+    }
+    #secondcol #firstimg, #fourthcol #firstimg {
+        margin: 0 0 21px 0;
+    }
+    #secondcol #firstimg img, #fourthcol #secondimg img {
+        height: 70%;
+    }
+    #secondcol #secondimg {
+        margin: 21px 0;
+    }
+    #fourthcol {
+        margin: 21px 0 0 0;
+        height: 482px;
+    }
+    #fourthcol #secondimg {
+        margin: 21px 0 0 0;
+    }
+
+    #activities a {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    footer h2 {
+        font-size: clamp(15px,5vw, 22px);
+    }
+    footer a {
+        font-size: clamp(12px,4vw, 20px);
+    }
+    .about, .accommodations, .help {
+        margin: 30px 0 10px 0;
+        width: 100%;
+        min-width: auto;
+    }
+
 }
+
 
